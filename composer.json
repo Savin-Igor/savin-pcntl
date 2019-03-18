@@ -1,0 +1,39 @@
+{
+    "name": "savin/pcntl",
+    "description": ":description",
+    "license": "license",
+    "keywords": ["Laravel", "PCNTL"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require" :
+    {
+        "ext-pcntl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Savin\\PCNTL\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Savin\\PCNTL\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Savin\\PCNTL\\PCNTLServiceProvider"
+            ],
+            "aliases": {
+                "PCNTL": "Savin\\PCNTL\\Facades\\PCNTL"
+            }
+        }
+    }
+}
