@@ -1,7 +1,7 @@
 {
     "name": "savin/pcntl",
-    "description": ":description",
-    "license": "license",
+    "description": "Laravel package to work with the OS signals.",
+    "license": "MIT",
     "keywords": ["Laravel", "PCNTL"],
     "require": {
         "illuminate/support": "~5"
